@@ -1,0 +1,32 @@
+a:link, a:visited{
+    color:black;
+    text-decoration: none;
+}
+li:not(li[class="menu"]){
+    list-style-type: none;
+    border:2px dashed brown;
+    padding: 10px;
+    margin:0;
+    background-color:cadetblue;
+}
+nav>ul>li{
+    position: relative;
+    list-style-type: none;
+}
+nav ul{
+    position: absolute;
+    margin-left:-40px;
+}
+p{
+    background-color: cornflowerblue;
+    border:2px solid brown;
+    margin:0;
+    padding: 10px;
+    padding-right: 100px;
+}
+ul[class="ul"]{
+    display: none;
+}
+li[class="menu"]:hover ul[class="ul"]{
+    display: block;
+}

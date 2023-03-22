@@ -1,0 +1,18 @@
+li{
+    list-style-type: none;
+    display: inline-block;
+    border:2px solid darkgoldenrod;
+    background-color: antiquewhite;
+    margin: -4px;
+    padding: 10px;
+}
+.nav li{
+    display: inline;
+}
+a:link{
+    text-decoration: none;
+    color:saddlebrown;
+}
+a:visited{
+    color: firebrick;
+}

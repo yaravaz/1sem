@@ -1,0 +1,59 @@
+li:not(ul[class="kaf"]>li){
+    display: inline-block;
+}
+a:link, a:visited{
+    color:sienna;
+    text-decoration: none;
+}
+nav>.nav>li{
+    position: relative;
+    list-style-type: none;
+}
+.nav ul{
+    position: absolute;
+    margin-left:157px;
+    margin-top:12px;
+}
+ul[class="kaf"]{
+    display: none;
+}
+li[class="faculty1"]:hover ul[class="kaf"]{
+    display: block;
+}
+.nav li:not(ul[class="kaf"]>li){
+    display: inline;
+}
+li{
+    list-style-type: none;
+    border:2px solid darkgoldenrod;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin:10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+li[class="faculty1"]{
+    padding-left: 65px;
+    padding-right: 65px;
+}
+ul[class="kaf"]>li{
+    padding-left: 22px;
+    padding-right: 21px;
+}
+ul[class="kaf"] li{
+    margin:0;
+    margin-top:-2px;
+}
+li:not(ul[class="kaf"]>li){
+    background: url(facultet.png) no-repeat 0 0 ;
+}
+li[class="faculty1"]:hover{
+    background: url(facultet.png) no-repeat 0 -30px ;
+}
+li[class="faculty2"]:hover{
+    background: url(facultet.png) no-repeat 0 -90px ;
+}
+li[class="faculty3"]:hover{
+    background: url(facultet.png) no-repeat 0 -60px ;
+}

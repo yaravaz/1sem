@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>chess</title>
+    <style>
+        td{
+            width: 40px;
+            height: 40px;
+            border: 1px solid;
+        }
+        table{
+            text-align: center;
+            border-spacing:0;
+            margin:auto;
+        }
+        th:not(th[class="empty"]){
+            background-color: grey;
+            border: 1px solid;
+        }
+        thead th, tfoot th{
+            height: 20px;
+        }
+        tbody th{
+            width: 20px;
+        }
+        tr:nth-child(even) td:nth-child(even){
+            background-color: black;
+        }
+        tr:nth-child(odd) td:nth-child(odd){
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="empty"></th>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+                <th>d</th>
+                <th>e</th>
+                <th>f</th>
+                <th>g</th>
+                <th>h</th>
+                <th class="empty"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>8</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th></th>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th></th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th></th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th></th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th></th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th></th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th></th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th></th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="empty"></th>
+                <th>a</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th class="empty"></th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

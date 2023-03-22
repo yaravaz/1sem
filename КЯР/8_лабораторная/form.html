@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style>
+        form{
+            background-color: indigo;
+            width: 380px;
+            color: white;
+            margin: 0 auto;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+        h4{
+            padding: 0;
+            margin: 0;
+            margin-bottom:10px;
+        }
+        label{
+            display: inline-block;
+            text-align:left;
+            width: 150px;
+            vertical-align: top;
+            margin-right: 15px;
+        }
+        div{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        input[type="text"]{
+            border-radius: 5px;
+            background-color: rgba(255,255,255,.5);
+            color:rgba(255,255,255,1);
+            box-shadow: inset 0 0 10px rgba(255,255,255, .75);
+            height: 25px;
+            width: 200px;
+        }
+        input[type="text"]:not(.as):focus{
+            background-color: black;
+        }
+        button{
+            background-color: navy;
+            box-shadow: 0 0 4px white;
+            color: white;
+            font-size:large;
+            border-radius: 5px;
+        } 
+        .a{
+            text-align: right;
+        }
+        button:hover{
+            background-color:rgb(87, 25, 141);
+            border: 1px solid #2f034d;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h4>Регистрация постоянного клиента</h4>
+        <div>
+            <label>Фамилия:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Имя:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Отчество:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Ваш возраст:</label>
+            <input type="text"label >
+        </div>
+        <div>
+            <label>Пол:</label>
+                    <input type="checkbox">мужской
+                    <input type="checkbox">женский
+            </div>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="text" class="as">
+        </div>
+        <div>
+            <label>Страна проживания:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Откуда вы узнали о нас:</label>
+            <select>
+                <option>Выберите вариант</option>
+                <option>CМИ</option>
+                <option>От знакомых</option>
+                <option>Социальные сети</option>
+                <option>Случайно наткнулись</option>
+            </select>
+        </div>
+        <div>
+            <label>Дата заполнения</label>
+            <input type="date">
+        </div>
+        <div class="a">
+            <button>Регистрация</button>
+            <button>Отмена</button>
+        </div>
+    </form>
+</body>
+</html>

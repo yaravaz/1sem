@@ -1,0 +1,25 @@
+.grid {
+    display: grid;
+    grid-template-rows: 700px;
+    grid-template-columns: 40px repeat(2, 4fr);
+    gap: 5px;
+    }
+div:not(div[class="grid"]){
+    border:2px solid sienna;
+}
+.box-1{
+    writing-mode:vertical-lr;
+    text-align: center;
+    font-size:xx-large;
+    padding:5px;
+}
+.box-2{
+    text-align: justify;
+    font-size:xx-large;
+    padding:20px;
+}
+.box-3{
+    text-align: justify;
+    font-size:xx-large;
+    padding:20px;
+}

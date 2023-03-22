@@ -1,0 +1,51 @@
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "B B B B B B"
+    "A C C C D D"
+    "A C C C D D"
+    "A C C C D D"
+    "A C C C D D"
+    "E E E E E E"
+    ;
+    gap: 5px;
+}
+nav{
+    grid-area: A;
+    background-color: rgb(211, 211, 211);
+    text-align: justify;
+    font-size:25px;
+    padding:20px;
+}
+header{
+    grid-area: B;
+    background-color: rgb(211, 211, 211);
+    text-align: justify;
+    font-size:25px;
+    padding:20px;
+}
+article{
+    grid-area: C;
+    background-color: rgb(211, 211, 211);
+    text-align: justify;
+    font-size:25px;
+    padding:20px;
+}
+aside{
+    grid-area: D;
+    background-color: rgb(211, 211, 211);
+    text-align: justify;
+    font-size:25px;
+    padding:20px;
+}
+footer{
+    grid-area: E;
+    background-color: rgb(211, 211, 211);
+    text-align: justify;
+    font-size:25px;
+    padding:20px;
+}
+ul{
+    list-style-type: none;
+    margin-left:-25px;
+}

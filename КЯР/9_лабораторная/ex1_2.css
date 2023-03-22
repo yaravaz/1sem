@@ -1,0 +1,39 @@
+.grid{
+    display:grid;
+    grid-template-areas:
+    "A A A A B B B B C"
+    "A A A A B B B B C"
+    "A A A A D D D D C"
+    "A A A A D D D D C";
+    grid-template-columns: repeat(3, 4fr) 40px;
+    grid-template-columns: 100px 50px 50px 100px;
+    gap:5px;
+}
+.box-1{
+    grid-area: A;
+    text-align: justify;
+    font-size:21px;
+    padding:13px;
+}
+.box-2{
+    grid-area: B;
+    text-align: justify;
+    font-size:21px;
+    padding:20px;
+}
+.box-3{
+    grid-area: D;
+    text-align: justify;
+    font-size:21px;
+    padding:20px;
+}
+.box-4{
+    grid-area: C;
+    writing-mode: vertical-lr;
+    text-align: center;
+    font-size:21px;
+    padding:5px;
+}
+div:not(div[class="grid"]){
+    border: 2px solid sienna;
+}

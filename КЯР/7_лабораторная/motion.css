@@ -1,0 +1,366 @@
+div:not(div[class="imgg"]) img{
+    width: 150px;
+    height: 150px;
+    border:3px ridge rgb(149, 45, 4);
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.img1:hover{
+    transform: scale(0.5);
+}
+.img2:hover{
+    transform: rotate(45deg);
+}
+.img3:hover{
+    transform: translate(50px,0px);
+}
+.img4:hover{
+    transform: skew(-20deg);
+}
+.img5:hover{
+    transform: perspective(700px) rotateX(45deg);
+}
+.img6:hover{
+    transform: perspective(700px) rotateY(45deg);
+}
+.img7:hover{
+    transform: perspective(700px) rotateX(-45deg);
+}
+.img8:hover{
+    transform: perspective(700px) rotateY(-45deg);
+}
+button{
+    width: 120px;
+    height: 50px;
+    text-align: center;
+}
+.div1:hover{
+    color:white;
+    background-color: black;
+}
+.div2:hover{
+    border: 5px solid red;
+    outline: 5px solid yellow;
+}
+.div3:hover{
+    border-top: 5px solid green;
+    border-bottom: 5px solid green;
+}
+.div4:hover{
+    border-left: 5px solid blue;
+    border-right: 5px solid blue;
+}
+.div5:hover{
+    background-image: radial-gradient(yellow, yellow 20px, magenta 35px, magenta 45px, rgb(209, 94, 209) 50px,  rgb(209, 94, 209) 60px, rgb(116, 209, 240) 70px);
+}
+.animation1{
+    animation: animation1 5s ease 2s both;
+}
+.animation2{
+    animation: animation2 5s ease 2s both;
+}
+.animation3{
+    animation: animation3 5s ease 2s both;
+}
+.animation4{
+    animation: animation4 5s ease 2s both;
+}
+.notmain{
+    margin-top:30px;
+    margin-left:0px;
+}
+
+@keyframes animation1{
+    0%{
+        transform: perspective(800px) rotateY(45deg);
+    }
+    50%{
+        
+    }
+    100%{
+        
+    }
+}
+@keyframes animation2{
+    0%{
+        transform: perspective(800px) rotateY(45deg);
+        margin-left:-130px;
+    }
+    50%{
+        margin-left:-120px;
+    }
+    100%{
+        filter: blur(10px);
+    }
+}
+@keyframes animation3{
+    0%{
+        transform: perspective(800px) rotateY(45deg);
+        margin-left:-130px;
+    }
+    50%{
+        margin-left:-120px;
+    }
+    100%{
+        filter: grayscale(1);
+    }
+}
+@keyframes animation4{
+    0%{
+        transform: perspective(800px) rotateY(45deg);
+        margin-left:-130px;
+    }
+    50%{
+        margin-left:-120px;
+    }
+    100%{
+        filter: invert(1);
+    }
+}
+.imgg{
+    border:4px ridge lightpink;
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    width: 150px;
+}
+#imgg1, #imgg2, #imgg3, #imgg4, #imgg5{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+#imgg1 { 
+    z-index: 5;
+    animation: anim1 5s linear infinite;
+}
+#imgg2 { 
+    z-index: 4;
+    right:150px;
+    animation: anim2 5s linear infinite;
+}
+#imgg3 { 
+    z-index: 3;
+    right:300px;
+    animation: anim3 5s linear infinite;
+}
+#imgg4 { 
+    z-index: 2;
+    right:450px;
+    animation: anim4 5s linear infinite;
+}
+#imgg5{
+    z-index: 1;
+    right:600px;
+    animation: anim5 5s linear infinite;
+}
+@keyframes anim1{
+    0%{
+        opacity: 1; 
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes anim2{
+    0%{
+        opacity: 0; 
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes anim3{
+    0%{
+        opacity: 0; 
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes anim4{
+    0%{
+        opacity: 0; 
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes anim5{
+    0%{
+        opacity: 0; 
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+}
+#cop1, #cop2, #cop3, #cop4, #cop5{
+    height: 150px;
+    width: 150px;
+    margin:30px;
+}
+#cop1{
+    animation: cop1 4s ease infinite alternate;
+    position: relative;
+    left: 0px;
+}
+@keyframes cop1{
+    0%{
+         
+    }
+    100%{
+        left:200px;
+    }
+}
+#cop2{
+    animation: cop2 4s ease-in-out infinite alternate;
+    position: relative;
+    left: 0px;
+}
+@keyframes cop2{
+    0%{
+         
+    }
+    100%{
+        left:600px;
+        border-radius: 100%;
+    }
+}
+#cop3{
+    animation: cop3 4s linear infinite both;
+    position: relative;
+    left: -150px;
+}
+@keyframes cop3{
+    0%{
+        
+    }
+    100%{
+        left:100%;
+    }
+}
+#cop4{
+    animation: cop4 4s linear infinite both;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+@keyframes cop4{
+    0%{
+        
+    }
+    100%{
+        top:50px;
+    }
+}
+#cop5{
+    animation: cop5 4s linear infinite both;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+@keyframes cop5{
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: 200px;
+        top:0px;
+    }
+    50%{
+        top: 200px;
+        left: 200px;
+    }
+    75%{
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+div[class="copy"], div[class="text"]{
+    overflow: hidden;
+}
+div[class="text"]{
+    width: 300px;
+    height: 300px;
+    color: lightcoral;
+    animation: text 5s linear infinite alternate;
+    text-align: justify;
+}
+@keyframes text{
+    0%{
+        color: lightcoral
+    }
+    100%{
+        color: lightseagreen;
+    }
+}
+h2{
+    animation: head 4s ease infinite alternate;
+}
+@keyframes head{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 80%;
+    }
+}

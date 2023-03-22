@@ -1,0 +1,32 @@
+div:not(div[class="maindiv"]){
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+}
+.maindiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.div1{
+    background-image: linear-gradient(to top, red, blue);
+}
+.div2{
+    background-image: repeating-linear-gradient(45deg, red, red 5px, blue 5px, blue 10px);
+}
+.div3{
+    background-image: radial-gradient(yellow, green);
+}
+.div4{
+    background-image: repeating-radial-gradient(green, green 6px, yellow 6px, yellow 12px);
+}
+.div5{
+    background: 
+    radial-gradient(yellow, green, transparent 65px),
+    linear-gradient(to top, magenta, blue);
+}
+.div6{
+    background: 
+    linear-gradient(to right, yellow, green, transparent 85px),
+    linear-gradient(to top, magenta,magenta 8px, blue 15px, blue 20px, white 30px, white 55px, rgb(123, 10, 10) 80px);
+}

@@ -1,0 +1,37 @@
+ul{
+    list-style-type: none;
+    margin-left: 0px;
+}
+li{
+    margin-bottom: 20px;
+}
+section, aside{
+    margin: 10px 30px;
+}
+aside{
+    border-left: 6px solid bisque;
+    margin-right: 40px;
+}
+main{
+    display: flex;
+    font-size: x-large;
+    text-indent: 40px;
+}
+section{
+    flex-direction: column;
+    margin-right: 0px;
+}
+
+.a1:link{
+    color:red;
+    text-decoration: none;
+}
+.a2:visited{
+    color: #8B0000;
+}
+.a3:hover{
+    color:green;
+}
+.a4:focus{
+    color:rgb(184, 134, 11);
+}
