@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex5</title>
+</head>
+<body>
+    <svg width="1000" height="1000" version="1.1" viewBox="0 0 1000 1000" xmlns="//www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="50" fill="blue"/>
+        <rect x="170" y="50" width="120" height="100" fill="red" stroke="darkblue">
+            <animate attributeName="stroke-width" from="0px" to="10px" dur="3s" repeatCount="indefinite"/>
+        </rect>
+        <ellipse id="ellipse" cx="400" cy="100" rx="100" ry="50" fill="green">
+            <animate attributeName="fill" from="orange" to="green" begin="ellipse.click"  dur="2s" /> 
+        </ellipse>
+        <polyline points="50,170 350,170 300,210 670,210" fill="none" stroke="purple" stroke-width="3"/>
+        <defs>
+            <linearGradient id="gradient">
+                <stop offset="0%" stop-color="green"/>
+                <stop offset="80%" stop-color="orange"/>
+            </linearGradient>
+        </defs>
+        <polygon points="570,50 500,150 640,150" fill="url(#gradient)" stroke="yellow" stroke-width="5px">
+            <animate attributeName="stroke" from="yellow" to="red" begin="mouseover" fill="freeze" dur="1s"/>
+        </polygon>
+    </svg>
+</body>
+</html>

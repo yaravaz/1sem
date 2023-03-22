@@ -1,0 +1,23 @@
+img{
+    width: $size_of_img;
+    border: $border;
+}
+nav{
+    .logo{
+        margin-top: $padding;
+        margin-left: $padding;
+        width: $size_of_logo;
+    }
+}
+.btn{
+    padding: $padding;
+    background-color: $color_background;
+    margin: $margin;
+    width: $size_of_button;
+}
+nav{
+    background-color: $back;
+}
+.buttons{
+    width:$size_of_buttons;
+}

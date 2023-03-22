@@ -1,0 +1,36 @@
+@function size($i){
+    @if ($i>=24px){
+        @return $i - 10px;
+    }
+    @else{
+        @return $i - 8px;
+    }
+}
+@import '_mixin.scss';
+main{
+    @include flex-row;
+    background-color: $back;
+    align-items: $begin;
+}
+.text{
+    @include flex-row;
+    
+}
+p{
+    padding-left: $padding;
+    padding-right: $padding;
+    align-self: $begin;
+    margin:$margin;
+    border: $border;
+    align-self: $stretch;
+    font-size: size($size_of_h2);
+}
+h2{
+    text-align: $center;
+    font-size: $size_of_h2;
+}
+@media(max-width:838px){
+    main{
+        @include flex-colomn;
+    }
+}

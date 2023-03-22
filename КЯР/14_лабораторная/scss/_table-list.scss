@@ -1,0 +1,25 @@
+.circle {
+    @extend %circle ;
+}
+
+.curcleon {
+    @extend %curcleon;
+}
+
+.square {
+    @extend %square;
+}
+
+table {
+    @extend %border;
+    @extend %table;
+}
+
+th {
+    @extend %border;
+}
+
+td {
+    @extend %border;
+    text-align: $center;
+}

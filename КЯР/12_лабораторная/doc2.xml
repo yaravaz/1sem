@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="forXML.css"?>
+<!DOCTYPE students [
+<!ELEMENT students (example, student)>
+<!ELEMENT example (euniversity, ename, esurname, eage)>
+<!ELEMENT student (university, name, surname, age)>
+<!ELEMENT euniversity (#PCDATA)>
+<!ELEMENT ename (#PCDATA)>
+<!ELEMENT esurname (#PCDATA)>
+<!ELEMENT eage (#PCDATA)>
+<!ELEMENT university (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ENTITY enamed "~">
+]>
+<students>
+    <example count="3">
+        <euniversity>&enamed;Университет&enamed;</euniversity>
+        <ename>&enamed;Имя&enamed;</ename>
+        <esurname>&enamed;Фамилия&enamed;</esurname>
+        <eage>&enamed;Возраст&enamed;</eage>
+    </example>
+    <student>
+        <university>БГТУ</university>
+        <name>Алина</name>
+        <surname>Темникова</surname>
+        <age>20</age>
+    </student>
+    <student>
+        <university>БГУИР</university>
+        <name>Иван</name>
+        <surname>Королов</surname>
+        <age>21</age></student>
+    <student>
+        <university>БГУ</university>
+        <name>Мария</name>
+        <surname>Приморная</surname>
+        <age>19</age></student>
+</students>

@@ -1,0 +1,33 @@
+@import '_mixin.scss';
+form{
+    @include flex-colomn;
+}
+.withimg{
+    @include flex-row;
+}
+img{
+    align-self: $begin;
+    margin:$margin;
+}
+aside{
+    margin: $margin;
+    padding-left: $padding;
+    min-width: $for_aside;
+}
+form{
+    padding:$padding;
+    @extend %color;
+    margin-left: $button;
+    input{
+        @include form;
+    }
+    .btn{
+        width: $button;
+    }
+}
+@media(max-width:838px){
+    form{
+        margin-left:$zero;
+        width: $for_aside;
+    }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="xslt2.xsl"?>
+<students>
+    <student>
+        <name>Алина</name>
+        <surname>Темникова</surname>
+        <mark>6</mark>
+    </student>
+    <student>
+        <name>Иван</name>
+        <surname>Королов</surname>
+        <mark>7</mark></student>
+    <student>
+        <name>Мария</name>
+        <surname>Приморная</surname>
+        <mark>4</mark></student>
+    <student>
+        <name>Катерина</name>
+        <surname>Серко</surname>
+        <mark>8</mark></student>
+    <student>
+        <name>Марина</name>
+        <surname>Наумова</surname>
+        <mark>3</mark></student>
+    <student>
+        <name>Яна</name>
+        <surname>Балабкина</surname>
+        <mark>7</mark></student>
+    <student>
+        <name>Елизавета</name>
+        <surname>Игнатова</surname>
+        <mark>8</mark></student>
+    <student>
+        <name>Денис</name>
+        <surname>Кричко</surname>
+        <mark>9</mark></student>
+    <student>
+        <name>Антон</name>
+        <surname>Кечко</surname>
+        <mark>5</mark></student>
+    <student>
+        <name>Назар</name>
+        <surname>Лотриев</surname>
+        <mark>2</mark></student>
+</students>

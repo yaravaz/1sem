@@ -1,0 +1,52 @@
+h1{
+    text-align: $center;
+    color:$blueviolet;
+    font-family:$font2;
+}
+h3 {
+    margin-left: $size5;
+    font-weight: $bold;
+    color:$blueviolet;
+    font-family:$font2;
+}
+h2 { 
+    color:$blueviolet;
+    font-family:$font2;
+}
+.sd{
+    color: $red;
+    font-family:$font1;
+    font-size: $size2;
+}
+.df{
+    color:$blueviolet;;
+    font-family:$font1;
+    font-size: $size3;
+}
+.fg{
+    color: $green;
+    font-family:$font1;
+    font-size: $size4;
+}
+body{
+    font-family:$font3;
+    font-size: $large;
+    margin-left: $marg;
+    margin-right: $marg;
+    background-color: $back;
+}
+p{
+    text-align: $justify;
+    text-indent: $index;
+    color: $blue;
+    font-family: $font4;
+    font-size: $size1;
+}
+.text {
+    text-align: $left;
+    padding-left: $padd;
+}
+span{
+    color: $black;
+    font-weight: $bold;
+}

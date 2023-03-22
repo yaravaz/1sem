@@ -1,0 +1,41 @@
+$red :red;
+$black :black;
+$blueviolet: blueviolet;
+$yellow :yellow;
+$green :green;
+$blue :blue;
+$back: #ADADAD;
+$bold: bold;
+$center: center;
+$left: left;
+$justify: justify;
+%circle{ 
+    list-style: outside;
+}
+%curcleon{ 
+    list-style: circle;
+}
+%square{ 
+    list-style: square;
+}
+%table{
+    border-collapse: collapse;
+    border-style: none;
+    width: 500px;
+}
+%border{
+    border: 2px solid black;
+}
+$font1: "Times New Roman";
+$font2: "Monotype Corsiva";
+$font3: "Book Antiqua";
+$font4: "Arial";
+$size1:16px;
+$size2: 18px;
+$size3: 20px;
+$size4: 22px;
+$size5: 30px;
+$large:large;
+$index:45px;
+$padd: 10px;
+$marg: 50px;

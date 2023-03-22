@@ -1,0 +1,4 @@
+@import '_mixin.scss';
+nav{
+    @include flex-row;
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset ="UFT-8" >
+<link rel="stylesheet" href="lab15.css">
+<title>website</title>
+</head>
+<body>
+    <h1>Фотогалерея</h1>
+    <div class="container">
+        <img onmouseenter="showText()" onmouseleave="hideText()" src="1.png">
+        <img class="img" src="2.png" onclick="this.className = (this.className == 'img' ? 'img__active' : 'img')" >
+        <img src="3.png">
+        <img src="4.png" id="sir1" onmouseover="change('4.png')" onmouseout="change('5.png')">
+    </div>
+        <p id="imgText">Cформированный и сцеплённый состав, состоящий из группы вагонов, с одним или несколькими действующими локомотивами или моторными вагонами, приводящими его в движение, и имеющий установленные сигналы (звуковые и видимые), которые обозначают его голову и хвост.</p>
+    <script type="text/javascript">
+        function change(src){
+            document.getElementById('sir1').src = src;
+        }
+let underImgP = document.getElementById('imgText');
+
+function showText(){
+    underImgP.style.opacity = "1";
+}
+
+function hideText(){
+    underImgP.style.opacity = "0";
+}
+</script>
+
+    <div class="form">
+        <H1>Анкета</H1>
+        <form>
+            <lable><a>Фамилия:</a><input type="text" class="text" id="name"></lable>
+            <lable><a>Имя:</a><input type="text" class="text" id="surname"></lable>
+            <lable><a>Адрес:</a><input type="text" class="text" id="adress"></lable>
+            <BR>
+            <label>
+                <input type="radio" id="radio" value="OK"> Доставка курьером
+            </label>
+            <label>
+                <input type="radio" id="radio" value="1"> Доставка в пункт выдачи
+            </label>
+            <div class="box">
+                <label><input type="checkbox" id="checkbox" value="оплата наличными" >оплата наличными</label>
+                <label><input type="checkbox" id="checkbox" value="checkbox 2" >оплата картой</label>
+                <label><input type="checkbox" id="checkbox" value="checkbox 3" >оплата через интернет-банкинг</label>
+                </div>
+                <p>Пожелания:</p>
+                <lable><input type="text" id="text"></lable>
+                <div class="butt">
+                <label><input type="button" id="butt"  value="подтвердить"></label>
+                </div>
+            </form>
+    <script>
+       document.getElementById("butt").addEventListener(
+                    'click',
+                    function(){
+                    var val = document.getElementById('surname').value;
+                    var vall = document.getElementById('name').value;
+
+                    document.getElementById('footer').innerHTML=`<p>Фамилия: ${val} </p> <p>Имя: ${vall}</p>`;
+
+                })
+    </script>
+    </div>
+
+    <footer id="footer"></footer>
+    </body>
+    </html>
