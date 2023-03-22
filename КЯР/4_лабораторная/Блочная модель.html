@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Блочная модель</title>
+    <style>
+        * {
+            text-align: center;
+            font-size: 25px;
+            margin: 3px;
+        }
+
+        .R {
+            border: 7px outset rgb(255, 0, 0);
+            padding: 10px;
+            margin-top: 10px;
+            width: 25px;
+            height: 28px;
+        }
+
+        .G {
+            border: 7px dashed rgb(0, 255, 0);
+            padding: 10px;
+            margin-top: 10px;
+            width: 25px;
+            height: 28px;
+        }
+
+        .B {
+            border: 7px dotted rgb(48, 48, 255);
+            padding: 10px;
+            margin-top: 10px;
+            width: 25px;
+            height: 28px;
+        }
+
+        .C {
+            border: 7px double rgb(0, 255, 255);
+            padding: 10px;
+            margin-top: 10px;
+            width: 25px;
+            height: 28px;
+        }
+
+        .M {
+            border: 7px groove rgb(255, 0, 255);
+            padding: 10px;
+            margin-top: 10px;
+            width: 25px;
+            height: 28px;
+        }
+
+        .Y {
+            border: 7px inset rgb(255, 255, 0);
+            padding: 10px;
+            margin-top: 10px;
+            width: 25px;
+            height: 28px;
+        }
+
+        .K {
+            border: 7px solid rgb(0, 0, 0);
+            padding: 10px;
+            margin-top: 10px;
+            width: 25px;
+            height: 28px;
+        }
+
+        .div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        span {
+
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            background-color: #FFA500;
+            border: 2px solid #FF4500;
+            max-width: 230px;
+
+        }
+
+        p {
+            text-align: left;
+        }
+
+        .as {
+            width: 400px;
+            text-align: center;
+            border: 3px solid #FF7F50;
+        }
+
+        .sd {
+            border: 5px solid #FF7F50;
+            border-radius: 20px/40px;
+            box-shadow: inset 2px 2px 8px 8px rgba(0, 0, 0, .5);
+            overflow: auto;
+            height: 200px;
+        }
+
+        .df {
+            border: 2px solid #FF6347;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div class="R">
+            R
+        </div>
+        <div class="G">
+            G
+        </div>
+        <div class="B">
+            B
+        </div>
+        <div class="C">
+            C
+        </div>
+        <div class="M">
+            M
+        </div>
+        <div class="Y">
+            Y
+        </div>
+        <div class="K">
+            K
+        </div>
+    </div>
+    <p class="as">
+        Lorem ipsum dolor sit amet <span>consectetur adipisicing</span> elit. Distinctio nesciunt sequi amet vel laborum
+        quam a
+        dolores. Sed deserunt quae temporibus inventore esse perferendis non, dolores ad laudantium cum fugiat?
+    </p>
+    <p class="sd">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim itaque, nisi porro laboriosam <span>facere
+            libero</span> placeat dignissimos esse quidem, quisquam sunt odit. Laboriosam repellat eligendi ea ducimus
+        aliquam nemo. Odio.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda cupiditate suscipit quasi reiciendis odit
+        delectus, nam minima ipsum harum voluptatum soluta ullam architecto perferendis cumque, pariatur quam quo porro
+        laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis alias nam molestias officia
+        voluptates voluptas sequi id ab vero sunt consequuntur illum, veniam, ipsum aut ea similique voluptate numquam
+        obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam minima voluptatum tempora quas
+        nobis provident neque? Eaque, veritatis non quae aliquid et iste quas optio nisi, quisquam accusamus impedit
+        suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur esse, eveniet minima pariatur
+        atque natus! Commodi numquam ducimus placeat. Eligendi cupiditate ipsum soluta corrupti ad deleniti tempora
+        quam, tempore harum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit molestiae voluptatem ex
+        veniam architecto, consequuntur dolorem ipsa quidem repellat et, quo officia eveniet dicta iure deleniti.
+        Architecto earum magnam obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis vel
+        nesciunt quis doloremque harum sed qui, quod quam culpa natus corrupti tempore. Nihil, repudiandae. Quibusdam
+        consectetur magnam odit ad recusandae!
+    </p>
+    <p class="df">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nesciunt iure eius, repellat dignissimos sunt,
+        consectetur <span>voluptatem vitae</span> autem perferendis id. Modi officiis tempore sapiente at esse animi
+        mollitia neque!
+    </p>
+</body>
+
+</html>

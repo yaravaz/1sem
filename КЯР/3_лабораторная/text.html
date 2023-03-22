@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Альбатросы</title>
+    <style>
+        * {
+            background-color: rgb(225, 252, 243);
+        }
+
+        @font-face {
+            font-family: "Caveat";
+            src: url("fonts/caveat-webfont.woff2"),
+                 url("fonts/caveat-webfont.woff");
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Exo2";
+            src: url("fonts/exo2_0_extralight-webfont.woff2"),
+                 url("fonts/exo2_0_extralight-webfont.woff");
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Comfortaa";
+            src: url("fonts/comfortaa-webfont.woff2"),
+                 url("fonts/comfortaa-webfont.woff");
+            font-display: swap;
+        }
+
+        h1 {
+            font-family: "Carveat";
+            margin-bottom: 0;
+            text-align: center;
+            font-style: bold;
+            text-transform: uppercase;
+            font-size: 45px;
+        }
+
+        h2 {
+            font-family: "Exo2";
+            margin-top: 0.2rem;
+            margin-bottom: 1.2em;
+            text-indent: 25px;
+            text-align: left;
+        }
+
+        p {
+            font-family: "Comfortaa";
+            text-indent: 25px;
+            text-align: justify;
+            margin: 0;
+            line-height:200%;
+            font-size: 20px;
+        }
+        p::first-letter{
+            font-style: bold;
+            font-size: 45px;
+            color:white;
+            background-color: hsla(275, 100%, 10%, 1);
+        }
+        ol{
+            margin-top: 0;
+            font-family: "Comfortaa";
+        }
+        .sd{
+            margin-bottom: 0;
+
+        }
+        li{
+            color:black;
+            font-size: 20px;
+            list-style-type: none;
+            counter-increment: item;
+        }
+        ol li:before{
+            content: counter(item, upper-roman) ". ";
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Albatross</h1>
+    <h2>Great albatross</h2>
+    <p> The great albatrosses are seabirds in the genus Diomedea in the albatross family. The genus Diomedea formerly
+        included all albatrosses except the sooty albatrosses, but in 1996 the genus was split, with the mollymawks and
+        the North Pacific albatrosses both being elevated to separate genera. The great albatrosses themselves form
+        two species complexes, the wandering and Amsterdam albatrosses, and the royal albatrosses. The splitting of the
+        great albatrosses into six or seven species has been accepted by most, though not all authorities.</p>
+    <p> The wandering albatross and the southern royal albatross are the largest of the albatrosses and are among the
+        largest of flying birds. They have the largest wingspans of any bird, being up to 3.5 m (11 ft) from tip to tip,
+        although the average is a little over 3 m (9.8 ft). Large adult males of these two species may exceed 11 kg (24
+        lb) in weight, as heavy as a large swan.
+    <h2>Mollymawk</h2>
+    <p> The mollymawks are a group of medium-sized albatrosses that form the genus Thalassarche. The name has sometimes
+        been used for the genus Phoebetria as well, but these are usually called sooty albatrosses. They are restricted
+        to the Southern Hemisphere, where they are the most common of the albatrosses. They were long considered to be
+        in the same genus as the great albatrosses, Diomedea, but a study of their mitochondrial DNA showed that they
+        are a monophyletic taxon related to the sooty albatrosses, and they were placed in their own genus.
+    </p>
+    <h2 class="sd">Types of albatross:</h2>
+    <ol>
+        <li>Tydea</li>
+        <li>Plotornis</li>
+        <li>Diomedavus</li>
+        <li>Aldiomedes</li>
+        <li>Phoebetria</li>
+    </ol>
+</body>
+</html>
